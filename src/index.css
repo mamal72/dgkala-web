@@ -29,6 +29,12 @@ body {
   font-family: 'Vazir', Tahoma, Arial, sans-serif;
 }
 
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+  }
+}
+
 .logo {
   height: 100%;
 }
