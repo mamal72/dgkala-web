@@ -12,7 +12,7 @@ A small & simple interface for [Digikala](https://www.digikala.com) in React & R
 
 ## Screenshots
 
-<center><img alt="Screenshot" width="600px" title="Screenshot" src="https://cdn.rawgit.com/mamal72/dgkala-web/58e096c2/screenshot.png" width="300px"></center>
+<div style="text-align: center"><img alt="Screenshot" width="600px" title="Screenshot" src="https://cdn.rawgit.com/mamal72/dgkala-web/f47093f5/screenshot.png"></div>
 
 ## Installation
 
