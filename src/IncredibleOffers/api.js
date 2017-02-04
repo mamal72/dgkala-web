@@ -1,5 +1,5 @@
 const CORS_ANYWHERE_ADDRESS = 'https://cors-anywhere.herokuapp.com/';
-const API_REQUEST_ADDRESS = 'https://cors-anywhere.herokuapp.com/https://service.digikala.com/api/IncredibleOffer/GetIncredibleOffer';
+const API_REQUEST_ADDRESS = 'https://cors-anywhere.herokuapp.com/https://service2.digikala.com/api/IncredibleOffer/GetIncredibleOffer';
 
 export function getIncredibleOffers() {
   return new Promise((res, rej) => {
