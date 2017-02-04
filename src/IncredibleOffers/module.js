@@ -27,7 +27,7 @@ export default function reducer(state = {}, action = {}) {
     case FETCH_INCREDIBLE_OFFERS_FAILED:
       return {
         ...state,
-        data: action.data,
+        errors: action.data,
         isLoading: false
       };
 

@@ -7,6 +7,7 @@ import IncredibleOffers from './IncredibleOffers';
 const mapStateToProps = (state, props) => {
   return {
     offers: state.incredibleOffers.data,
+    errors: state.incredibleOffers.errors,
     isLoading: state.incredibleOffers.isLoading,
     filter: props.filter
   }
@@ -14,7 +15,8 @@ const mapStateToProps = (state, props) => {
 
 class IncredibleOfferContainer extends Component {
   render() {
-    const {offers, isLoading, filter} = this.props;
+    const {offers, errors, isLoading, filter} = this.props;
+
     if (isLoading) {
       return (
         <div className="spinner">
@@ -22,8 +24,9 @@ class IncredibleOfferContainer extends Component {
         </div>
       );
     }
+
     return (
-      <IncredibleOffers filter={filter} offers={offers}/>
+      <IncredibleOffers filter={filter} errors={errors} offers={offers}/>
     );
   }
 }
