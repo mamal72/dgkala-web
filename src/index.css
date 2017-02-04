@@ -29,18 +29,6 @@ body {
   font-family: 'Vazir', Tahoma, Arial, sans-serif;
 }
 
-.nav {
-  margin: 0;
-  padding: 0;
-}
-
-@media (min-width: 768px) {
-  .navbar-left {
-    margin-left: 10px;
-    margin-right: 25px;
-  }
-}
-
 .logo {
   height: 100%;
 }

@@ -25,10 +25,12 @@ class App extends Component {
     };
     const filter = this.props.params.filter;
     return (
-      <Grid>
+      <div>
         <Navbar {...navigationMenuData} />
-        <IncredibleOffersContainer filter={filter}/>
-      </Grid>
+        <Grid>
+          <IncredibleOffersContainer filter={filter}/>
+        </Grid>
+      </div>
     );
   }
 }
