@@ -12,7 +12,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { IndexLink } from 'react-router';
 
 export default ({header, items}) => (
-  <Navbar inverse={true}>
+  <Navbar inverse collapseOnSelect>
     <Navbar.Header>
       <Navbar.Brand>
         <IndexLink>
@@ -22,21 +22,24 @@ export default ({header, items}) => (
           />
         </IndexLink>
       </Navbar.Brand>
+      <Navbar.Toggle />
     </Navbar.Header>
-    <Nav>
-      {
-        items.map((item, id) => (
-          <LinkContainer key={id} to={{ pathname: item.link }}>
-            <NavItem>{item.title}</NavItem>
-          </LinkContainer>
-        ))
-      }
-    </Nav>
-    <Navbar.Form pullLeft>
-      <FormGroup>
-        <FormControl type="text" placeholder="جستجو..." />
-      </FormGroup>
-      <Button type="submit">جستجو</Button>
-    </Navbar.Form>
+    <Navbar.Collapse>
+      <Nav>
+        {
+          items.map((item, id) => (
+            <LinkContainer key={id} to={{ pathname: item.link }}>
+              <NavItem>{item.title}</NavItem>
+            </LinkContainer>
+          ))
+        }
+      </Nav>
+      <Navbar.Form pullLeft>
+        <FormGroup>
+          <FormControl type="text" placeholder="جستجو..." />
+        </FormGroup>
+        <Button type="submit">جستجو</Button>
+      </Navbar.Form>
+    </Navbar.Collapse>
   </Navbar>
 );
