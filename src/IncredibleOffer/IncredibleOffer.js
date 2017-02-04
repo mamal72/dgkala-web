@@ -7,7 +7,6 @@ import {
   Glyphicon
 } from 'react-bootstrap';
 
-
 export default class extends Component {
   render() {
     const {
@@ -25,9 +24,9 @@ export default class extends Component {
           header={Title}
           footer={
             <div>
-              <h5>قیمت اصلی: {Price / 10} تومان</h5>
-              <h5>مقدار تخفیف: {Discount / 10} تومان</h5>
-              <h5>قیمت فعلی: {(Price - Discount) / 10} تومان</h5>
+              <h5>قیمت اصلی: {(Price / 10).toLocaleString()} تومان</h5>
+              <h5>مقدار تخفیف: {(Discount / 10).toLocaleString()} تومان ({Math.round(Discount * 100 / Price)}٪)</h5>
+              <h5>قیمت فعلی: {((Price - Discount) / 10).toLocaleString()} تومان</h5>
               <Button title="نمایش در دیجی‌کالا" target="_blank" bsSize="small" bsStyle="primary" href={`https://www.digikala.com/Product/DKP-${ProductId}`}>
                 <Glyphicon glyph="eye-open"/>
               </Button>
