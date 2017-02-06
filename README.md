@@ -42,4 +42,4 @@ You can fork the repository, improve or fix some part of it and then send the pu
 
 ## License
 
-> Licensed under the [MIT License](https://github.com/mamal72/dgkala-web/blob/master/ LICENSE).
+> Licensed under the [MIT License](https://github.com/mamal72/dgkala-web/blob/master/LICENSE).
