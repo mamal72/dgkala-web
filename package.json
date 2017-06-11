@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "gh-pages": "^0.12.0",
-    "react-scripts": "0.8.5"
+    "gh-pages": "^1.0.0",
+    "react-scripts": "1.0.7"
   },
   "dependencies": {
     "bootstrap": "3",
@@ -12,12 +12,12 @@
     "halogen": "^0.2.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^15.4.2",
-    "react-bootstrap": "^0.30.7",
+    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.4.2",
-    "react-helmet": "^4.0.0",
+    "react-helmet": "^5.1.3",
     "react-redux": "^5.0.2",
-    "react-router": "^3.0.2",
-    "react-router-bootstrap": "^0.23.1",
+    "react-router": "^4.1.1",
+    "react-router-bootstrap": "^0.24.2",
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0"
@@ -31,3 +31,4 @@
   },
   "homepage": "https://mamal72.github.io/dgkala-web"
 }
+
