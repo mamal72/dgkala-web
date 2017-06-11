@@ -3,7 +3,8 @@ import {
   Col,
   Panel,
   Button,
-  Glyphicon
+  Glyphicon,
+  Image
 } from 'react-bootstrap';
 
 export default class extends Component {
@@ -31,6 +32,7 @@ export default class extends Component {
             </div>
           }
         >
+        <Image src="http://via.placeholder.com/180x180" />
         </Panel>
       </Col>
     );
