@@ -21,15 +21,17 @@ export default ({ filter, errors, offers }) => {
     );
   }
 
+  const { hits } = offers;
+
   if (filter === 'application') {
-    return renderOffers(offers.filter(offer => offer.OnlyForApplication === true), 'پیشنهادهای شگفت‌انگیز مخصوص اپلیکیشن')
+    return renderOffers(hits.filter(offer => offer._source.OnlyForApplication === true), 'پیشنهادهای شگفت‌انگیز مخصوص اپلیکیشن')
   }
 
   if (filter === 'members') {
-    return renderOffers(offers.filter(offer => offer.OnlyForMembers === true), 'پیشنهادهای شگفت‌انگیز مخصوص اعضا')
+    return renderOffers(hits.filter(offer => offer._source.OnlyForMembers === true), 'پیشنهادهای شگفت‌انگیز مخصوص اعضا')
   }
 
-  return renderOffers(offers, 'پیشنهادهای شگفت‌انگیز');
+  return renderOffers(hits, 'پیشنهادهای شگفت‌انگیز');
 }
 
 function renderOffers(offers, title) {
@@ -51,7 +53,7 @@ function renderOffers(offers, title) {
       <Helmet title={title} />
       {
         offers.map((offer, id) => {
-          return <IncredibleOffer key={id} {...offer} />
+          return <IncredibleOffer key={id} {...offer._source} />
         })
       }
     </Row>

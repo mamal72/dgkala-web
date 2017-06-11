@@ -9,7 +9,6 @@ const mapStateToProps = (state, props) => {
     offers: state.incredibleOffers.data,
     errors: state.incredibleOffers.errors,
     isLoading: state.incredibleOffers.isLoading,
-    filter: props.filter
   }
 };
 
