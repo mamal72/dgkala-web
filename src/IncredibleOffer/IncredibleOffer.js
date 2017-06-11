@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  Image,
   Col,
   Panel,
   Button,
@@ -11,7 +10,6 @@ export default class extends Component {
   render() {
     const {
       Title,
-      ImagePaths,
       Price,
       Discount,
       ProductId
@@ -33,7 +31,6 @@ export default class extends Component {
             </div>
           }
         >
-          <Image src={ImagePaths.Size180} />
         </Panel>
       </Col>
     );
