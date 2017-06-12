@@ -11,6 +11,7 @@ export default class extends Component {
   render() {
     const {
       Title,
+      ImagePaths,
       Price,
       Discount,
       ProductId
@@ -32,7 +33,7 @@ export default class extends Component {
             </div>
           }
         >
-        <Image src="http://via.placeholder.com/180x180" />
+        <Image src={ImagePaths.Size180} />
         </Panel>
       </Col>
     );
